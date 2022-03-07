@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnCompareTempScr"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Compare TempSrc"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkTempDst"
+        app:layout_constraintTop_toTopOf="@+id/chkTempDst" />
+
+    <CheckBox
+        android:id="@+id/chkLibString"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="1dp"
+        android:text="LibString"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkLibBool" />
+
+    <CheckBox
+        android:id="@+id/chkMuteSpkr"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="85dp"
+        android:text="Mute"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chkPlay" />
+
+    <CheckBox
+        android:id="@+id/chkMicMute"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:text="Mute"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkMic"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <CheckBox
+        android:id="@+id/chkMic"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:text="Mic"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtMic"
+        app:layout_constraintStart_toStartOf="@+id/chkTempSrc"
+        app:layout_constraintTop_toTopOf="@+id/chkMicMute" />
+
+    <CheckBox
+        android:id="@+id/chkFile3"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="35dp"
+        android:text="File 3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chkFile2" />
+
+    <CheckBox
+        android:id="@+id/chkFIFOFile3"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="35dp"
+        android:text="File 3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chkFIFOFile2" />
+
+    <CheckBox
+        android:id="@+id/chkEq"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="1dp"
+        android:text="Eq"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkLibString"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkFIFOFile2"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="File 2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkFIFOFile3"
+        app:layout_constraintTop_toTopOf="@+id/chkFIFOFile1" />
+
+    <CheckBox
+        android:id="@+id/chkTempSrc"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:text="TempSrc"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkFile1"
+        app:layout_constraintStart_toStartOf="@+id/chkFile1"
+        app:layout_constraintTop_toBottomOf="@+id/chkMic" />
+
+    <CheckBox
+        android:id="@+id/chkUdpBypassFIFO"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:text="Udp Bypass"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkQueue"
+        app:layout_constraintStart_toStartOf="@+id/chkQueue"
+        app:layout_constraintTop_toBottomOf="@+id/chkTempDstFIFO" />
+
+    <CheckBox
+        android:id="@+id/chkLibBool"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="LibBool"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkLibString"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtLib"
+        app:layout_constraintTop_toTopOf="@+id/chkLibString" />
+
+    <CheckBox
+        android:id="@+id/chkFile1"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="File 1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkTempSrcDst"
+        app:layout_constraintStart_toStartOf="@+id/chkTempSrcDst"
+        app:layout_constraintTop_toBottomOf="@+id/chkTempSrc" />
+
+    <CheckBox
+        android:id="@+id/chkQueue"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Queue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkMixer"
+        app:layout_constraintStart_toStartOf="@+id/chkMixer"
+        app:layout_constraintTop_toBottomOf="@+id/chkUdpBypassFIFO" />
+
+    <CheckBox
+        android:id="@+id/chkUdp"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Udp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkPlay"
+        app:layout_constraintStart_toStartOf="@+id/chkPlay"
+        app:layout_constraintTop_toBottomOf="@+id/chkUdpBypass" />
+
+    <CheckBox
+        android:id="@+id/chkFile2"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="File 2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkFile3"
+        app:layout_constraintStart_toEndOf="@+id/chkFile1"
+        app:layout_constraintTop_toTopOf="@+id/chkFile1" />
+
+    <CheckBox
+        android:id="@+id/chkTempSrcDst"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="TempSrc"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkUdpBypass"
+        app:layout_constraintStart_toStartOf="@+id/chkUdpBypass"
+        app:layout_constraintTop_toBottomOf="@+id/chkFile1" />
+
+    <CheckBox
+        android:id="@+id/chkUdpBypass"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:text="Udp Bypass"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkUdp"
+        app:layout_constraintStart_toStartOf="@+id/chkUdp"
+        app:layout_constraintTop_toBottomOf="@+id/chkTempSrcDst" />
+
+    <CheckBox
+        android:id="@+id/chkPlay"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Play"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkTempDst"
+        app:layout_constraintStart_toStartOf="@+id/chkTempDst"
+        app:layout_constraintTop_toBottomOf="@+id/chkUdp" />
+
+    <CheckBox
+        android:id="@+id/chkTempDstFIFO"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="TempDst"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkUdpBypassFIFO"
+        app:layout_constraintStart_toStartOf="@+id/chkUdpBypassFIFO"
+        app:layout_constraintTop_toBottomOf="@+id/chkFIFOFile1" />
+
+    <CheckBox
+        android:id="@+id/chkTempDst"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="TempDst"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCompareTempScr"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtFIFO"
+        app:layout_constraintStart_toStartOf="@+id/chkTempSrcFIFO"
+        app:layout_constraintTop_toTopOf="@+id/txtFIFO" />
+
+    <CheckBox
+        android:id="@+id/chkMixer"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Mixer"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/chkLibBool"
+        app:layout_constraintTop_toTopOf="@+id/chkEq" />
+
+    <CheckBox
+        android:id="@+id/chkTempSrcFIFO"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="TempSrc"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkFIFOFile1"
+        app:layout_constraintStart_toStartOf="@+id/chkFIFOFile1"
+        app:layout_constraintTop_toBottomOf="@+id/chkTempDst" />
+
+    <CheckBox
+        android:id="@+id/chkFIFOFile1"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="File 1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkTempDstFIFO"
+        app:layout_constraintStart_toStartOf="@+id/chkTempDstFIFO"
+        app:layout_constraintTop_toBottomOf="@+id/chkTempSrcFIFO" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkMicMute"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCompareTempScr"
+        app:layout_constraintTop_toTopOf="@+id/btnCompareTempScr"
+        app:srcCompat="@android:drawable/presence_online" />
+
+    <TextView
+        android:id="@+id/txtMic"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:text="Mic"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chkMic" />
+
+    <TextView
+        android:id="@+id/txtFIFO"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:text="FIFO"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtSpkr"
+        app:layout_constraintTop_toBottomOf="@+id/txtSpkr" />
+
+    <TextView
+        android:id="@+id/txtSpkr"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:text="Spkr"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtDst"
+        app:layout_constraintTop_toBottomOf="@+id/txtDst" />
+
+    <TextView
+        android:id="@+id/txtLib"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:text="Lib"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkLibBool"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chkLibBool" />
+
+    <TextView
+        android:id="@+id/txtSrcFIFO"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:text="Src"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFIFO" />
+
+    <TextView
+        android:id="@+id/txtDst"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:text="Dst"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtMic"
+        app:layout_constraintTop_toBottomOf="@+id/txtMic" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
